@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.RecyclerViewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@drawable/img_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/img_cokegg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/img_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:src="@drawable/img_logo"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/my_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:entries="@array/food_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/my_spinner_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:entries="@array/food_type"
+        app:layout_constraintStart_toEndOf="@id/my_spinner"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/my_spinner_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:entries="@array/food_type"
+        app:layout_constraintStart_toEndOf="@id/my_spinner_2"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/my_spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/marco_outline_round">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="60"
+            tools:listitem="@layout/item_food_card_view"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

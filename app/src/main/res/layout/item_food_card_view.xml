@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/marco_outline_round"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/image_start"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/plato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eggs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Huevos a la me chingue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_calories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_start"
+        app:layout_constraintTop_toBottomOf="@id/eggs" />
+
+    <TextView
+        android:id="@+id/txt_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="180,0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/calories"
+        app:layout_constraintTop_toBottomOf="@id/eggs" />
+
+    <ImageView
+        android:id="@+id/img_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/img_meet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_calories"
+        app:layout_constraintTop_toBottomOf="@id/eggs" />
+
+    <TextView
+        android:id="@+id/txt_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26,0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_meet"
+        app:layout_constraintTop_toBottomOf="@id/eggs" />
+
+    <ImageView
+        android:id="@+id/img_prote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/img_prote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_meet"
+        app:layout_constraintTop_toBottomOf="@id/eggs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24,0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_prote"
+        app:layout_constraintTop_toBottomOf="@id/eggs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
