@@ -1,10 +1,11 @@
-package com.akagami.example2.home
+package com.akagami.example2.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.akagami.example2.R
 import com.akagami.example2.data.FoodModel
+import com.akagami.example2.home.viewholders.FoodViewHolder
 
 class FoodAdapter() :
     RecyclerView.Adapter<FoodViewHolder>() {

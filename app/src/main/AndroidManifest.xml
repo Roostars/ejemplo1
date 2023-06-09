@@ -13,13 +13,10 @@
         android:theme="@style/Theme.Example2"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".androidexercise.imccalculator.ImcCalculatorActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".home.RecyclerViewActivity"
+            android:name=".androidexercise.MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +24,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".androidexercise.firstapp.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".androidexercise.firstapp.FirstAppActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.RecyclerViewActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>

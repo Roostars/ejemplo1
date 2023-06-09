@@ -9,4 +9,8 @@
     <color name="newgreen">#2B9D03</color>
 
 
+    <color name="selector">#2F0678</color>
+    <color name="componet_selector">#450EA6</color>
+
+
 </resources>

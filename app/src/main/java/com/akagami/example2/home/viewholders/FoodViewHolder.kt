@@ -1,4 +1,4 @@
-package com.akagami.example2.home
+package com.akagami.example2.home.viewholders
 
 import android.view.View
 import android.widget.TextView
